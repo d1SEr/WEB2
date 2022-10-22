@@ -57,17 +57,20 @@
 }
 .header-bg{
     display: flex;
-    min-height: 156px;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    min-height: 156px;
 }
 .header-bg .link{
+    text-align: center;
     text-decoration: none;
     color: #000000;
     font-family: Antonio;
     font-size: 45px;
 }
 .header-bg .store{
+    text-align: center;
+    display: inline;
     writing-mode: vertical-lr;
     text-transform: uppercase;
     font-size: 20px;
@@ -252,7 +255,7 @@
     .header-bg{
         min-height: 100px;
     }
-    .header-bg a{
+    .header-bg .link{
         font-size: 30px;
     }
     .header-bg .store{
