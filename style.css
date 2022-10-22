@@ -56,12 +56,15 @@
     background: #ffffff;
 }
 .header-bg{
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
-    min-height: 156px;
+    justify-content: center; */
+    /* min-height: 156px; */
+    background: #ffffff;
 }
 .header-bg .link{
+    margin: 58px 0px 58px 0px;
+    display: block;
     text-align: center;
     text-decoration: none;
     color: #000000;
@@ -70,7 +73,6 @@
 }
 .header-bg .store{
     text-align: center;
-    display: inline;
     writing-mode: vertical-lr;
     text-transform: uppercase;
     font-size: 20px;
@@ -219,63 +221,75 @@
         max-width: 970px;
     }
 }
+
 @media screen and (max-width: 992px){
     .container{
         max-width: 750px;
     }
 }
+
+@media screen and (max-width: 1060px){
+    .header-bg .link{
+         margin: 48px 0px 48px 0px;
+    }
+     .main-block-right-img{
+         max-width: 100%;
+     }
+     .main-block-left h1{
+         font-size: 25px;
+         margin-bottom: 20px;
+         letter-spacing: 0px;
+     }
+     .main-block-left .fashionstore{
+         font-size: 35px;
+     }
+     .main-block-left .blockRect{
+         width: 70px;
+         margin-top: 20px;
+     }
+     .main-block-left .blockRect .sale{
+         font-size: 10px;
+     }
+ }
+ 
+ @media screen and (max-width: 900px){
+     /* .header-bg{
+         min-height: 100px;
+     } */
+     .header-bg .link{
+         margin: 38px 0px 38px 0px;
+         font-size: 30px;
+     }
+     .header-bg .store{
+         font-size: 13px;
+     }
+     .navmenu-item-left{
+         display: none;
+     }
+     #icon{
+         display: flex;
+     }
+     .navmenu-left.responsive #icon{
+         margin-top: 20px;
+     }
+     .navmenu-left.responsive .navmenu-item-left:is(:last-child)
+     {
+         margin-bottom: 20px;
+     }
+     .navmenu-left.responsive .navmenu-item-left{
+         display: flex;
+         font-size: 15px;
+     }
+ }
+
 @media screen and (max-width: 767px){
+    .header-bg .link{
+        margin: 28px 0px 28px 0px;
+    }
     .container{
         max-width: none;
     }
-}
-
-@media screen and (max-width: 1060px){
-    .main-block-right-img{
-        max-width: 100%;
-    }
-    .main-block-left h1{
-        font-size: 25px;
-        margin-bottom: 20px;
-        letter-spacing: 0px;
-    }
-    .main-block-left .fashionstore{
-        font-size: 35px;
-    }
-    .main-block-left .blockRect{
-        width: 70px;
-        margin-top: 20px;
-    }
-    .main-block-left .blockRect .sale{
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 900px){
-    .header-bg{
-        min-height: 100px;
-    }
-    .header-bg .link{
-        font-size: 30px;
-    }
-    .header-bg .store{
-        font-size: 13px;
-    }
-    .navmenu-item-left{
-        display: none;
-    }
     #icon{
-        display: flex;
-    }
-    .navmenu-left.responsive #icon{
-        margin-top: 20px;
-    }
-    .navmenu-left.responsive .navmenu-item-left:is(:last-child)
-    {
-        margin-bottom: 20px;
-    }
-    .navmenu-left.responsive .navmenu-item-left{
-        display: flex;
-        font-size: 15px;
+        font-size: 21px;
     }
 }
