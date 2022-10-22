@@ -1,0 +1,281 @@
+@font-face {
+	font-family: 'Myriad Pro'; 
+	src: url(./fonts/MyriadPro/MYRIADPRO-REGULAR.OTF); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Calibri'; 
+	src: url(./fonts/Calibri/calibri.ttf); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Antonio'; 
+	src: url(./fonts/Antonio/Antonio.ttf); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Antonio Bold'; 
+	src: url(./fonts/Antonio/Antonio.ttf); 
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Raleway'; 
+	src: url(./fonts/Raleway/Raleway.ttf); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Raleway Bold'; 
+	src: url(./fonts/Raleway/Raleway.ttf); 
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Raleway SemiBold'; 
+	src: url(./fonts/Raleway/Raleway.ttf); 
+    font-weight: 600;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    max-width: 1200;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header{
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: #ffffff;
+}
+.header-bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 156px;
+}
+.header-bg .link{
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-family: Antonio;
+    font-size: 45px;
+}
+.header-bg .store{
+    text-align: center;
+    display: inline;
+    writing-mode: vertical-lr;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #acb9c1;
+}
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+}
+.container{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    box-sizing: content-box;
+}
+.navmenu{
+    border-top: 1px solid #d0d0d0;
+    background: #f8f8f8;
+}
+.navmenu-bg{
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.navmenu-left{
+    display: flex;
+    align-items: center;
+}
+.navmenu-list-left{
+    list-style-type: none;
+}
+.navmenu-item-left:not(:last-child)
+{
+    margin-right: 32px;
+}
+.navmenu-item-left{
+    display: inline;
+}
+.navmenu-link-left{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: 'Raleway Bold';
+    font-size: 13px;
+}
+.navmenu-link-left:hover{
+    border-bottom: 3px solid #a9765a;
+}
+#icon{
+    display: none;
+}
+.navmenu-right{
+    display: flex;
+    align-items: center;
+}
+.navmenu-list-right{
+    list-style-type: none;
+}
+.navmenu-item-right:not(:last-child){
+    margin-right: 27px;
+}
+.navmenu-item-right{
+    display: inline;
+}
+.korzina{
+    position: relative;
+}
+.count{
+    font-family: 'Raleway SemiBold';
+    font-size: 12px;
+    position: absolute;
+    left: 21px;
+    color: white;
+}
+.navmenu-link-right{
+    text-decoration: none;
+}
+.navmenu-link-right:hover{
+    border-bottom: 3px solid #a9765a;
+}
+
+.main-block{
+    background-image: url(./img/Rect.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0%;
+    object-fit: cover;
+}
+.main-block-bg{
+    display: flex;
+    justify-content: space-around;
+}
+.main-block-left{
+    display: flex;
+    flex-wrap: wrap;
+    margin:  140px 0px 130px 0px;
+}
+.main-block-left h1{
+    text-transform: uppercase;
+    font-family: 'Antonio Bold';
+    font-size: 54.5px;
+    color: #a9765a;
+    letter-spacing: 5px;
+}
+.main-block-left .fashionstore{
+    font-size: 80px;
+    color: #170f11;
+}
+.main-block-left .store{
+    color: #a9765a;
+}
+.main-block-left .text{
+    font-family: Calibri;
+    font-size: 17px;
+    color: #ac7e6f;
+    max-width: 600px;
+}
+.main-block-left .blockRect{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 48px;
+    background-color: #000000;
+}
+.main-block-left .blockRect .sale{
+    font-family: 'Raleway SemiBold';
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.main-block-right{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.main-block-right-img{
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 1200px){
+    .container{
+        max-width: 970px;
+    }
+}
+@media screen and (max-width: 992px){
+    .container{
+        max-width: 750px;
+    }
+}
+@media screen and (max-width: 767px){
+    .container{
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 1060px){
+    .main-block-right-img{
+        max-width: 100%;
+    }
+    .main-block-left h1{
+        font-size: 25px;
+        margin-bottom: 20px;
+        letter-spacing: 0px;
+    }
+    .main-block-left .fashionstore{
+        font-size: 35px;
+    }
+    .main-block-left .blockRect{
+        width: 70px;
+        margin-top: 20px;
+    }
+    .main-block-left .blockRect .sale{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .header-bg{
+        min-height: 100px;
+    }
+    .header-bg .link{
+        font-size: 30px;
+    }
+    .header-bg .store{
+        font-size: 13px;
+    }
+    .navmenu-item-left{
+        display: none;
+    }
+    #icon{
+        display: flex;
+    }
+    .navmenu-left.responsive #icon{
+        margin-top: 20px;
+    }
+    .navmenu-left.responsive .navmenu-item-left:is(:last-child)
+    {
+        margin-bottom: 20px;
+    }
+    .navmenu-left.responsive .navmenu-item-left{
+        display: flex;
+        font-size: 15px;
+    }
+}
