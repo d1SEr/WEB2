@@ -61,7 +61,7 @@
     justify-content: center;
     align-items: center;
 }
-.header-bg a{
+.header-bg .link{
     text-decoration: none;
     color: #000000;
     font-family: Antonio;
@@ -69,6 +69,7 @@
 }
 .header-bg .store{
     writing-mode: vertical-lr;
+    text-transform: uppercase;
     font-size: 20px;
     color: #acb9c1;
 }
